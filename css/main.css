@@ -27,6 +27,37 @@ body {
   height: 700px;
 }
 
+#skill {
+  background: rgb(245, 196, 151);
+  color: white;
+  height: 700px;
+}
+
+#work {
+  background: rgb(151, 245, 182);
+  color: white;
+  height: 700px;
+}
+
+#work {
+  background: rgb(151, 245, 182);
+  color: white;
+  height: 700px;
+}
+
+#connect {
+  background: rgb(202, 167, 212);
+  color: white;
+  height: 700px;
+}
+
+#box {
+  background: rgb(151, 163, 245);
+  color: white;
+  height: 300px;
+  width: 300px;
+}
+
 footer {
   background: url(../img/smartphones.png);
 }
