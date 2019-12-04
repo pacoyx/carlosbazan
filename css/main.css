@@ -9,10 +9,22 @@ body {
 }
 
 #testimonial {
-  background: rgb(2, 129, 248);
+  background: rgb(141, 128, 115);
   padding: 50px 0 30px 0;
   text-align:center;
   margin-top: 40px;
+}
+
+#home {
+  background: rgb(160, 149, 127);
+  color: white;
+  height: 700px;
+}
+
+#aboutme {
+  background: rgb(151, 163, 245);
+  color: white;
+  height: 700px;
 }
 
 footer {
