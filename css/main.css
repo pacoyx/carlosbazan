@@ -54,10 +54,27 @@ body {
 #box {
   background: rgb(151, 163, 245);
   color: white;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 }
 
 footer {
   background: url(../img/smartphones.png);
+}
+
+.bienvenido{
+  /* background: url(../img/codigo.jpg); */
+ 
+  color: rgb(180, 233, 235);
+}
+
+.avatar {
+  /* cambia estos dos valores para definir el tamaño de tu círculo */
+  height: 100px;
+  width: 100px;
+  /* los siguientes valores son independientes del tamaño del círculo */
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
 }
