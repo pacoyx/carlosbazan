@@ -28,22 +28,38 @@ body {
 }
 
 #skill {
-  background: rgb(245, 196, 151);
-  color: white;
+  background:rgb(7, 135, 221);
+  color:white;
   height: 700px;
+}
+
+.skillFondo {
+  /* background-image: url("../img/fondoblanco.jpg"); */
+ 
+  width: 100%;
+  /*height: 700px;  You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.workFondo {
+  background-image: url("../img/postit.jpg");
+  color: white;
+  
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 #work {
   background: rgb(151, 245, 182);
-  color: white;
-  height: 700px;
+  color: black;
+  /* height: 700px; */
 }
 
-#work {
-  background: rgb(151, 245, 182);
-  color: white;
-  height: 700px;
-}
+
 
 #connect {
   background: rgb(202, 167, 212);
@@ -77,4 +93,18 @@ footer {
   background-position: 50%;
   border-radius: 50%;
   background-size: 100% auto;
+}
+
+.imgwork{
+  width: 231px;
+  height: 200px;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
 }
