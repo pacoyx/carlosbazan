@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/animate.css">
 
   <script src="js/wow.min.js"></script>
+  <script src="js/app.js"></script>
   <script>
     new WOW().init();
   </script>
@@ -33,14 +34,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#home">HOME</a>
-        <a class="nav-item nav-link" href="#aboutme">ABOUT ME</a>
-        <a class="nav-item nav-link" href="#skill">SKILL</a>
-        <a class="nav-item nav-link" href="#work">WORK</a>
-        <a class="nav-item nav-link" href="#connect">CONNECT</a>
+        <a class="nav-item nav-link" href="#home" data-ancla="home">HOME</a>
+        <a class="nav-item nav-link" href="#aboutme" data-ancla="aboutme">ABOUT ME</a>
+        <a class="nav-item nav-link" href="#skill" data-ancla="skill">SKILL</a>
+        <a class="nav-item nav-link" href="#work" data-ancla="work">WORK</a>
+        <a class="nav-item nav-link" href="#connect" data-ancla="connect">CONNECT</a>
       </div>
     </div>
   </nav>
+
+
 
 
   <section id="home">
@@ -127,50 +130,78 @@
       <div class="col-md-12">
 
         <div class="row">
-          <div class="col-sm  wow animated fadeInDown">
-            <img src="img/angularlogo.png" class="avatar">
-            <img src="img/angularlogo.png" class="avatar"><br>
-            Desarrollador Fronted, aplicaciones de paginas SPA con Angular
+          <div class="col-sm  wow animated fadeInDown" style="height: 150px;">
+            <div style="padding: 5px;">
+              <img src="img/angularlogo.png" class="avatar">
+              <!-- <img src="img/html.png" class="avatar">
+                  <img src="img/css.jpg" class="avatar"> -->
+              <img src="img/ionic.png" class="avatar"><br>
+            </div>
+
+
+            <div class="cajatexto">
+              Front-End Developer, aplicaciones de paginas SPA con Angular.
+              UX | UI & Diseño Resposive
+            </div>
           </div>
           <div class="col-sm">
-            
+
           </div>
           <div class="col-sm wow animated bounceInLeft">
-              <img src="img/csharp.png" class="avatar">
-              <img src="img/sqlserver.png" class="avatar">
-              <br>
-              Backend con visual studio .Net Framework / Core <br>
+            <div style="padding: 5px;">
+              <img src="img/csharp.jpg" class="avatar">
+              <img src="img/sqlserver.jpg" class="avatar">
+              <img src="img/netcore.png" class="avatar">
+            </div>
+
+
+            <div class="cajatexto">
+              Backend con visual studio .Net Framework / Core
               Web Api / Page codeando con C#
+            </div>
           </div>
         </div>
+
+
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm text-center" style="height: 200px;">
             <img src="img/frontBack.png" style="width: 200px; height: 150px;">
           </div>
           <div class="col-sm  wow animated bounceInLeft">
-              <img src="img/programador.png" style="width: 150px; height: 200px;">
+            <img src="img/devops.png" style="width: 250px; height: 200px;">
           </div>
-          <div class="col-sm">
+          <div class="col-sm text-center">
             <img src="img/the_backend.png" style="width: 200px; height: 150px;">
           </div>
         </div>
+
+
         <div class="row">
-          <div class="col-sm  wow animated bounceInLeft">
-            <img src="img/git.png" class="avatar">
-            <img src="img/bitbucken.png" class="avatar"><br>
-            Git / GitHub / Bitbucken <br>
-            Versionamiento de proyectos local y remoto.<br>
-            Uso de Git Flow como buenas practias.
-        </div>
-        <div class="col-sm ">
-         
-          
-      </div>
-          <div class="col-sm wow animated bounceInLeft">
-            
-              <img src="img/docker.jpg" class="avatar">
+          <div class="col-sm wow animated flash">
+            <img src="img/flujo.png" style="width: 200px; height: 150px;">
+
+            <!-- <img src="img/git.png" class="avatar">
+            <img src="img/github.png" class="avatar">
+            <img src="img/bitbucken.png" class="avatar">
+            <p>
+              Git / GitHub / Bitbucken
+              Versionamiento de proyectos local y remoto.
+              Uso de Git Flow como buenas practias.
+            </p> -->
+
+          </div>
+          <div class="col-sm">
+
+          </div>
+          <div class="col-sm wow animated flipInX">
+            <img src="img/agenda.png" style="width: 200px; height: 150px;">
+            <!-- <img src="img/docker.jpg" class="avatar">
+            <img src="img/nodejs.jpg" class="avatar">
+            <img src="img/mongodb.png" class="avatar"> -->
           </div>
         </div>
+
+
 
       </div>
     </div>
@@ -211,6 +242,21 @@
             </div>
           </form>
         </div>
+
+        <div class="col-md-7">
+          { name : "Carlos Bazan Huaman",<br>
+          title : "Business Development Representative, LatAm",<br>
+          whatsapp : "(956) 424-5555"<br>
+          o. phone : "(+51) 1 7061 827,<br>
+          (+52) 55 4162 9117,<br>
+          (+54) 11 5984 2203,<br>
+          (+55) 21 3500 0460,<br>
+          (+56) 75 2741 623,<br>
+          (+57) 15 0867 87,<br>
+          EXT. 9047,"<br>
+          location : "Austin, TX" }<br>
+        </div>
+
       </div>
     </div>
   </footer>
@@ -225,39 +271,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
     integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-  <!-- SCROOLL REVEAL SCRIPT -->
+
   <!-- <script>
-    window.sr = ScrollReveal();
+      //Cuando cargue la página completamente
+      $(document).ready(function(){
+        //Creamos un evento click para el enlace
+        $(".ancla").click(function(evento){
+          //Anulamos la funcionalidad por defecto del evento
+          evento.preventDefault();
+          //Creamos el string del enlace ancla
+          var codigo = "#" + $(this).data("ancla");
+          //Funcionalidad de scroll lento para el enlace ancla en 3 segundos
+          $("html,body").animate({scrollTop: $(codigo).offset().top}, 3000);
+        });
+      });
+    </script> -->
 
-    sr.reveal('.navbar', {
-      duration: 2000,
-      origin: 'bottom'
-    });
 
-    sr.reveal('.header-content-left', {
-      duration: 2000,
-      origin: 'top',
-      distance: '300px'
-    });
-
-    sr.reveal('.header-content-right', {
-      duration: 2000,
-      origin: 'right',
-      distance: '300px'
-    });
-
-    sr.reveal('.header-btn', {
-      duration: 2000,
-      delay: 1000,
-      origin: 'bottom'
-    });
-
-    sr.reveal('#testimonial div', {
-      duration: 2000,
-      origin: 'left',
-      distance: '300px',
-      viewFactor: 0.2
-    });
+  <!-- SCROOLL REVEAL SCRIPT -->
+  <script>
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -268,7 +300,8 @@
         });
       });
     });
-  </script> -->
+  </script>
+
 </body>
 
 </html>
